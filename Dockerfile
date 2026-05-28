@@ -1,5 +1,5 @@
-FROM httpd
+FROM nginx
 EXPOSE 80
-LABEL this is base imaga
+LABEL this is base image
 MAINTAINER from mahi
-COPY index.html  /usr/local/apache2/htdocs/
+COPY index.html /usr/share/nginx/html
